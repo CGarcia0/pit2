@@ -1,1 +1,4 @@
-# pit2
+# Projeto Integrador Transdisciplinar
+
+Baixar o nodejs
+Baixar o postgresql
