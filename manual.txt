@@ -1,0 +1,61 @@
+---------------------------------------------------------------
+Baixar o nodejs
+---------------------------------------------------------------
+	
+	# installs fnm (Fast Node Manager)
+	winget install Schniz.fnm
+
+	# configure fnm environment
+	fnm env --use-on-cd | Out-String | Invoke-Expression
+
+	# download and install Node.js
+	fnm use --install-if-missing 20
+
+	# verifies the right Node.js version is in the environment
+	node -v # should print `v20.17.0`
+
+	# verifies the right npm version is in the environment
+	npm -v # should print `10.8.2`	
+
+
+
+---------------------------------------------------------------
+Baixar o banco de dados PostgreSQL na versao 15.8
+---------------------------------------------------------------
+
+	postgresql-15.8-1-windows-x64.exe
+	
+	link abaixo:
+	https://sbp.enterprisedb.com/getfile.jsp?fileid=1259127
+	
+	
+	Ao instalar o postgresql adicionar a senha: Jmsa3087
+	e porta padrao: 5432
+
+
+
+---------------------------------------------------------------
+Para instalar o backend:
+---------------------------------------------------------------
+
+	entrar na pasta/diretorio backend executar os comandos:
+	npm i  
+	
+	
+	executar o comando para criar o database:
+	yarn db:migrate
+	
+	executar o app do backend:
+	yarn dev
+	
+	
+
+---------------------------------------------------------------
+Para instalar o frontend	
+---------------------------------------------------------------
+	
+	entrar na pasta/diretorio frontend executar os comandos:
+	npm i
+	
+	executar o website do frontend:
+	yarn start
